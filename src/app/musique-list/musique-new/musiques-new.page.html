@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Nouvelle musique</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-item>
+    <ion-input type="text" label="Affiche" [(ngModel)]="musique.pictureLink"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input type="text" label="Titre" [(ngModel)]="musique.title"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input type="text" label="Date" [(ngModel)]="musique.date"></ion-input>
+  </ion-item>
+  <p class="text-center">
+    <ion-button (click)="add()">Envoyer</ion-button>
+  </p>
+</ion-content>
